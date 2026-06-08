@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ilhan Yalcin – Reiseportale, Websites und Web-Apps</title>
+<title>TripInConnect – Reiseportale, Websites und Web-Apps</title>
 <link rel="icon" type="image/png" href="favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -335,10 +335,63 @@
   .mini-screen {
     position: relative;
     border-radius: 20px;
-    padding: 18px;
     min-height: 210px;
     border: 1px solid rgba(255,255,255,0.08);
     overflow: hidden;
+  }
+
+  .showcase-media {
+    position: relative;
+    min-height: 260px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid rgba(255,255,255,0.08);
+    background: rgba(255,255,255,0.03);
+  }
+
+  .showcase-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .media-overlay {
+    position: absolute;
+    inset: auto 0 0 0;
+    padding: 18px;
+    background: linear-gradient(180deg, transparent 0%, rgba(6,16,25,0.24) 24%, rgba(6,16,25,0.82) 100%);
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    align-items: end;
+  }
+
+  .media-copy strong {
+    display: block;
+    font-family: 'Manrope', sans-serif;
+    font-size: 18px;
+    line-height: 1.2;
+    margin-bottom: 4px;
+    color: #fff;
+  }
+
+  .media-copy span {
+    color: rgba(255,255,255,0.78);
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  .media-chip {
+    padding: 8px 12px;
+    border-radius: 999px;
+    background: rgba(255,255,255,0.14);
+    border: 1px solid rgba(255,255,255,0.16);
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700;
+    white-space: nowrap;
+    backdrop-filter: blur(10px);
   }
 
   .screen-portal {
@@ -1179,7 +1232,7 @@
 
 <nav>
   <div class="nav-inner">
-    <div class="logo">Ilhan <span>Yalcin</span></div>
+    <div class="logo">TripIn<span>Connect</span></div>
     <div class="nav-links">
       <a href="#work">Projekte</a>
       <a href="#services">Leistungen</a>
@@ -1194,8 +1247,8 @@
   <div class="hero-inner">
     <div class="hero-copy">
       <div class="hero-badge">Digitale Produkte fuer Reise, Marketing und Vertrieb</div>
-      <h1>Ich baue <span class="accent">Reiseportale</span>, Websites und Web-Apps, die nicht nur gut aussehen, sondern im Alltag arbeiten.</h1>
-      <p class="hero-sub">Ich entwickle digitale Produkte fuer Reise, Hospitality und Marketing, die sichtbar verkaufen und intern funktionieren. Von praezisen Landingpages ueber starke Markenauftritte bis zu Web-Apps fuer Prozesse und Vertrieb steht immer dieselbe Frage im Zentrum: Was hilft dem Geschaeft wirklich weiter?</p>
+      <h1>Wir bauen <span class="accent">Reiseportale</span>, Websites und Web-Apps, die nicht nur gut aussehen, sondern im Alltag arbeiten.</h1>
+      <p class="hero-sub">Wir entwickeln digitale Produkte fuer Reise, Hospitality und Marketing, die sichtbar verkaufen und intern funktionieren. Von praezisen Landingpages ueber starke Markenauftritte bis zu Web-Apps fuer Prozesse und Vertrieb steht immer dieselbe Frage im Zentrum: Was hilft dem Geschaeft wirklich weiter?</p>
       <div class="hero-actions">
         <a href="#work" class="btn-primary">Ausgewaehlte Projekte ansehen</a>
         <a href="mailto:info@tripinconnect.com" class="btn-secondary">Direkt Kontakt aufnehmen</a>
@@ -1221,19 +1274,14 @@
             <h2 class="showcase-name">jetztbuchbar.de</h2>
             <p class="showcase-desc">Ein digitales Reiseportal mit verkaufsstarker Startseite, klarer Nutzerfuehrung und Fokus auf Anfragen, Inspiration und Conversion.</p>
           </div>
-          <div class="mini-screen screen-portal">
-            <div class="screen-nav">
-              <div class="screen-brand">jetztbuchbar</div>
-              <div>Deals / Regionen / Anfrage</div>
-            </div>
-            <div class="portal-hero">
-              <strong>Reisen entdecken, vergleichen und direkt anfragen.</strong>
-              <span>Eine Startseite, die nicht wie ein Platzhalter aussieht, sondern sofort Orientierung und Reiselust erzeugt.</span>
-            </div>
-            <div class="portal-deals">
-              <div class="deal-card"><small>Sommer</small><strong>Last Minute</strong></div>
-              <div class="deal-card"><small>Familie</small><strong>Top Hotels</strong></div>
-              <div class="deal-card"><small>Meer</small><strong>Pauschal</strong></div>
+          <div class="showcase-media">
+            <img src="jetztbuchbar-image.png" alt="Startseitenansicht von jetztbuchbar.de" />
+            <div class="media-overlay">
+              <div class="media-copy">
+                <strong>Reiseportal mit klarer Angebotsfuehrung</strong>
+                <span>Starker Einstieg fuer Suche, Inspiration und Anfrage.</span>
+              </div>
+              <div class="media-chip">Live Portal</div>
             </div>
           </div>
           <ul class="showcase-list">
@@ -1257,23 +1305,15 @@
             <h2 class="showcase-name">reisexpert.at</h2>
             <p class="showcase-desc">Eine Website fuer ein Reisebuero in Wien, die lokal Vertrauen aufbaut und das Team, die Beratung und das Angebot klar inszeniert.</p>
           </div>
-          <div class="mini-screen screen-agency">
-            <div class="screen-toolbar">
-              <div class="screen-brand">reisexpert</div>
-              <div>Wien / Beratung / Anfrage</div>
-            </div>
-            <div class="agency-layout">
-              <div class="agency-copy">
-                <strong>Persoenliche Reiseberatung mit lokalem Charakter.</strong>
-                <span>Ein digitaler Auftritt, der nicht generisch wirkt, sondern Kompetenz und Naehe transportiert.</span>
+          <div class="showcase-media">
+            <img src="reisexpert-image.png" alt="Startseitenansicht von reisexpert.at" />
+            <div class="media-overlay">
+              <div class="media-copy">
+                <strong>Markenauftritt fuer ein Reisebuero in Wien</strong>
+                <span>Beratung, Vertrauen und lokaler Charakter sichtbar gemacht.</span>
               </div>
-              <div class="agency-side">
-                <div class="agency-badge"><small>Standort</small><strong>Wien</strong></div>
-                <div class="agency-badge"><small>Fokus</small><strong>Beratung</strong></div>
-                <div class="agency-badge"><small>Ziel</small><strong>Mehr Leads</strong></div>
-              </div>
+              <div class="media-chip">Brand Site</div>
             </div>
-            <div class="agency-photo"></div>
           </div>
           <ul class="showcase-list">
             <li>Praesentationsseite fuer lokales Vertrauen und klare Kontaktwege</li>
@@ -1296,20 +1336,14 @@
             <h2 class="showcase-name">marketing-desk.net</h2>
             <p class="showcase-desc">Eine operative Web-App fuer Hotels und Agenturen, um Marketing-Aktivitaeten strukturiert zu verfolgen und als Team sauber abzuarbeiten.</p>
           </div>
-          <div class="mini-screen screen-app">
-            <div class="screen-toolbar">
-              <div class="screen-brand">marketing desk</div>
-              <div>Tasks / Campaigns / Status</div>
-            </div>
-            <div class="app-panel">
-              <strong>Marketing-Prozesse sichtbar, trackbar und teamfaehig machen.</strong>
-              <span>Nicht nur eine schoene Oberflaeche, sondern ein Tool, das wiederkehrende Arbeit organisiert und messbar macht.</span>
-            </div>
-            <div class="app-grid">
-              <div class="app-stat"><small>Tasks</small><strong>124 offen</strong></div>
-              <div class="app-stat"><small>Kampagnen</small><strong>18 aktiv</strong></div>
-              <div class="app-stat"><small>Teams</small><strong>Hotels + Agenturen</strong></div>
-              <div class="app-stat"><small>Status</small><strong>Live Workflow</strong></div>
+          <div class="showcase-media">
+            <img src="marketingdesk-image.png" alt="Dashboard-Ansicht von marketing-desk.net" />
+            <div class="media-overlay">
+              <div class="media-copy">
+                <strong>Web-App fuer Marketing-Prozesse</strong>
+                <span>Workflow, Uebersicht und operative Zusammenarbeit in einem Tool.</span>
+              </div>
+              <div class="media-chip">Web App</div>
             </div>
           </div>
           <ul class="showcase-list">
@@ -1334,8 +1368,8 @@
 
 <section class="section" id="services">
   <div class="section-label reveal">Leistungen</div>
-  <h2 class="section-title reveal">Was ich fuer Unternehmen, Reisebueros und digitale Produkte aufbaue.</h2>
-  <p class="section-sub reveal">Mich interessieren Projekte, die Geschaeft und Produkt konsequent zusammendenken: nach aussen klar positioniert, intern sauber nutzbar und so gebaut, dass sie mit dem Unternehmen wachsen koennen.</p>
+  <h2 class="section-title reveal">Was wir fuer Unternehmen, Reisebueros und digitale Produkte aufbauen.</h2>
+  <p class="section-sub reveal">Uns interessieren Projekte, die Geschaeft und Produkt konsequent zusammendenken: nach aussen klar positioniert, intern sauber nutzbar und so gebaut, dass sie mit dem Unternehmen wachsen koennen.</p>
   <div class="features-grid reveal">
     <div class="feature-card">
       <div class="feature-icon">✈️</div>
@@ -1360,7 +1394,7 @@
     <div class="feature-card">
       <div class="feature-icon">⚙️</div>
       <div class="feature-title">Produktlogik & Weiterentwicklung</div>
-      <p class="feature-desc">Ich denke Projekte nicht als einmalige Seiten, sondern als Systeme, die neue Module, Inhalte und Funktionen aufnehmen koennen.</p>
+      <p class="feature-desc">Wir denken Projekte nicht als einmalige Seiten, sondern als Systeme, die neue Module, Inhalte und Funktionen aufnehmen koennen.</p>
     </div>
     <div class="feature-card">
       <div class="feature-icon">📱</div>
@@ -1423,7 +1457,7 @@
     <article class="project-card">
       <span class="project-type">SaaS / Tool</span>
       <h3>marketing-desk.net</h3>
-      <p>Eine funktionale Web-App, die zeigt, dass ich nicht nur Schauseiten baue, sondern auch interne Prozesse in digitale Produkte uebersetze.</p>
+      <p>Eine funktionale Web-App, die zeigt, dass wir nicht nur Schauseiten bauen, sondern auch interne Prozesse in digitale Produkte uebersetzen.</p>
       <div class="project-outcomes">
         <span class="outcome-pill">Workflow Tool</span>
         <span class="outcome-pill">Dashboard</span>
@@ -1448,24 +1482,24 @@
 </section>
 
 <section class="section">
-  <div class="section-label reveal">Ueber mich</div>
-  <h2 class="section-title reveal">Diese Seite soll nicht nur Projekte zeigen, sondern auch klar machen, wer dahinter steht.</h2>
-  <p class="section-sub reveal">Statt TripInConnect als einzelnes Produkt in den Vordergrund zu stellen, zeigt die Seite jetzt bewusst meine persoenliche Arbeitsrichtung: digitale Produkte entwickeln, live bringen und entlang echter Anforderungen weiterbauen.</p>
+  <div class="section-label reveal">Ueber uns</div>
+  <h2 class="section-title reveal">Diese Seite soll nicht nur Projekte zeigen, sondern auch klar machen, wofuer TripInConnect steht.</h2>
+  <p class="section-sub reveal">Statt ein einzelnes Produkt in den Vordergrund zu stellen, zeigt diese Seite bewusst unsere Arbeitsrichtung: digitale Produkte entwickeln, live bringen und entlang echter Anforderungen weiterbauen.</p>
   <div class="about-grid">
     <div class="about-card reveal">
-      <p>Ich arbeite an Projekten, die zwischen Markenauftritt und Produktlogik liegen. Genau dort wird es interessant: wenn eine Seite nicht nur praesentiert, sondern konkrete Nutzerwege, Anfragen oder operative Prozesse sauber unterstuetzt.</p>
-      <p>Mit jetztbuchbar.de, reisexpert.at und marketing-desk.net ist bereits sichtbar, dass die Arbeit nicht auf eine einzige Projektart festgelegt ist. Das Spektrum reicht von sales-orientierten Reiseportalen bis zu Web-Apps fuer Teams, die taeglich mit klaren Aufgaben und Ablaeufen arbeiten.</p>
-      <p>Diese Landingpage ist deshalb bewusst als persoenliche Geschaeftsseite gedacht: weniger Produktversprechen, mehr nachvollziehbare Referenzen und eine klare Richtung fuer kommende Projekte.</p>
+      <p>Wir arbeiten an Projekten, die zwischen Markenauftritt und Produktlogik liegen. Genau dort wird es interessant: wenn eine Seite nicht nur praesentiert, sondern konkrete Nutzerwege, Anfragen oder operative Prozesse sauber unterstuetzt.</p>
+      <p>Mit jetztbuchbar.de, reisexpert.at und marketing-desk.net ist bereits sichtbar, dass unsere Arbeit nicht auf eine einzige Projektart festgelegt ist. Das Spektrum reicht von sales-orientierten Reiseportalen bis zu Web-Apps fuer Teams, die taeglich mit klaren Aufgaben und Ablaeufen arbeiten.</p>
+      <p>Diese Landingpage ist deshalb bewusst als Geschaeftsseite von TripInConnect gedacht: weniger Produktversprechen, mehr nachvollziehbare Referenzen und eine klare Richtung fuer kommende Projekte.</p>
     </div>
     <div class="profile-card reveal">
       <div class="profile-top">
-        <div class="profile-avatar">IY</div>
+        <div class="profile-avatar">TC</div>
         <div>
-          <div class="profile-name">Ilhan Yalcin</div>
+          <div class="profile-name">TripInConnect</div>
           <div class="profile-role">Digital Product Development · Travel · Marketing</div>
         </div>
       </div>
-      <p class="profile-copy">Ich kombiniere visuelle Qualitaet mit Produktdenken. Das Ziel ist nicht nur eine moderne Oberflaeche, sondern eine Loesung, die im echten Geschaeftsbetrieb brauchbar bleibt.</p>
+      <p class="profile-copy">Wir verbinden visuelle Qualitaet mit Produktdenken. Das Ziel ist nicht nur eine moderne Oberflaeche, sondern eine Loesung, die im echten Geschaeftsbetrieb brauchbar bleibt.</p>
       <ul class="profile-list">
         <li>Fokus auf Reiseportale, Reisebueros, Hospitality und Marketing-Prozesse</li>
         <li>Starke erste Versionen mit Raum fuer spaetere Ausbaustufen</li>
@@ -1554,12 +1588,12 @@
         </div>
         <div class="contact-actions">
           <a class="btn-primary" id="mail-action" href="mailto:info@tripinconnect.com?subject=Projektanfrage">Per E-Mail senden</a>
-          <a class="btn-secondary" id="wa-action" href="https://wa.me/4369919050017?text=Hallo%20Ilhan,%20ich%20moechte%20ein%20Projekt%20mit%20dir%20besprechen.">Per WhatsApp senden</a>
+          <a class="btn-secondary" id="wa-action" href="https://wa.me/4369919050017?text=Hallo%20TripInConnect%20Team,%20wir%20moechten%20ein%20Projekt%20mit%20euch%20besprechen.">Per WhatsApp senden</a>
           <span class="contact-status" id="contact-status">Die Nachricht wird automatisch aus deinen Angaben vorbereitet.</span>
         </div>
       </form>
       <div class="contact-links">
-        <a class="contact-link" href="mailto:info@tripinconnect.com?subject=Projektanfrage&body=Hallo%20Ilhan,%0A%0Aich%20plane%20ein%20Projekt%20im%20Bereich:%0A-Ziel:%0A-Status:%0A-Timing:%0A%0A">
+        <a class="contact-link" href="mailto:info@tripinconnect.com?subject=Projektanfrage&body=Hallo%20TripInConnect%20Team,%0A%0Awir%20moechten%20ein%20Projekt%20mit%20euch%20besprechen.%0A%0ABereich:%0A-Ziel:%0A-Status:%0A-Timing:%0A%0A">
           <div>
             <span>E-Mail</span>
             <strong>Projektanfrage per Mail senden</strong>
@@ -1573,7 +1607,7 @@
           </div>
           <strong>→</strong>
         </a>
-        <a class="contact-link" href="https://wa.me/4369919050017?text=Hallo%20Ilhan,%20ich%20moechte%20ein%20Projekt%20mit%20dir%20besprechen.">
+        <a class="contact-link" href="https://wa.me/4369919050017?text=Hallo%20TripInConnect%20Team,%20wir%20moechten%20ein%20Projekt%20mit%20euch%20besprechen.">
           <div>
             <span>WhatsApp</span>
             <strong>Schnell und direkt abstimmen</strong>
@@ -1596,8 +1630,8 @@
 
 <footer>
   <div class="footer-inner">
-    <div class="footer-logo">Ilhan <span>Yalcin</span></div>
-    <p class="footer-copy">+43 699 1905 0017 · info@tripinconnect.com · Wien, Oesterreich © 2026</p>
+    <div class="footer-logo">TripIn<span>Connect</span></div>
+    <p class="footer-copy">TripInConnect · +43 699 1905 0017 · info@tripinconnect.com · Wien, Oesterreich © 2026</p>
   </div>
 </footer>
 
@@ -1628,9 +1662,9 @@
       const note = (formData.get('note') || '').toString().trim();
 
       const lines = [
-        'Hallo Ilhan,',
+        'Hallo TripInConnect Team,',
         '',
-        'ich moechte ein Projekt mit dir besprechen.',
+        'wir moechten ein Projekt mit euch besprechen.',
         '',
         'Projektart: ' + projectType,
         'Timing: ' + timing,
