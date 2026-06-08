@@ -361,42 +361,38 @@
     display: block;
   }
 
-  .media-overlay {
-    position: absolute;
-    inset: auto 0 0 0;
-    padding: 18px;
-    background: linear-gradient(180deg, transparent 0%, rgba(6,16,25,0.24) 24%, rgba(6,16,25,0.82) 100%);
+  .showcase-caption {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
     gap: 12px;
-    align-items: end;
+    padding: 2px 2px 0;
   }
 
-  .media-copy strong {
+  .caption-copy strong {
     display: block;
     font-family: 'Manrope', sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.2;
     margin-bottom: 4px;
-    color: #fff;
+    color: var(--text);
   }
 
-  .media-copy span {
-    color: rgba(255,255,255,0.78);
+  .caption-copy span {
+    color: var(--text2);
     font-size: 12px;
     line-height: 1.5;
   }
 
-  .media-chip {
+  .caption-chip {
     padding: 8px 12px;
     border-radius: 999px;
-    background: rgba(255,255,255,0.14);
-    border: 1px solid rgba(255,255,255,0.16);
-    color: #fff;
+    background: rgba(255,255,255,0.07);
+    border: 1px solid rgba(255,255,255,0.10);
+    color: var(--text);
     font-size: 11px;
     font-weight: 700;
     white-space: nowrap;
-    backdrop-filter: blur(10px);
   }
 
   .screen-portal {
@@ -1278,13 +1274,13 @@
           </div>
           <div class="showcase-media">
             <img src="jetztbuchbar-image.png" alt="Startseitenansicht von jetztbuchbar.de" />
-            <div class="media-overlay">
-              <div class="media-copy">
-                <strong>Reiseportal mit klarer Angebotsfuehrung</strong>
-                <span>Starker Einstieg fuer Suche, Inspiration und Anfrage.</span>
-              </div>
-              <div class="media-chip">Live Portal</div>
+          </div>
+          <div class="showcase-caption">
+            <div class="caption-copy">
+              <strong>Reiseportal mit klarer Angebotsfuehrung</strong>
+              <span>Starker Einstieg fuer Suche, Inspiration und Anfrage.</span>
             </div>
+            <div class="caption-chip">Live Portal</div>
           </div>
           <ul class="showcase-list">
             <li>Positionierung als moderner Reise-Einstiegspunkt mit visueller Tiefe</li>
@@ -1309,13 +1305,13 @@
           </div>
           <div class="showcase-media">
             <img src="reisexpert-image.png" alt="Startseitenansicht von reisexpert.at" />
-            <div class="media-overlay">
-              <div class="media-copy">
-                <strong>Markenauftritt fuer ein Reisebuero in Wien</strong>
-                <span>Beratung, Vertrauen und lokaler Charakter sichtbar gemacht.</span>
-              </div>
-              <div class="media-chip">Brand Site</div>
+          </div>
+          <div class="showcase-caption">
+            <div class="caption-copy">
+              <strong>Markenauftritt fuer ein Reisebuero in Wien</strong>
+              <span>Beratung, Vertrauen und lokaler Charakter sichtbar gemacht.</span>
             </div>
+            <div class="caption-chip">Brand Site</div>
           </div>
           <ul class="showcase-list">
             <li>Praesentationsseite fuer lokales Vertrauen und klare Kontaktwege</li>
@@ -1340,13 +1336,13 @@
           </div>
           <div class="showcase-media">
             <img src="marketingdesk-image.png" alt="Dashboard-Ansicht von marketing-desk.net" />
-            <div class="media-overlay">
-              <div class="media-copy">
-                <strong>Web-App fuer Marketing-Prozesse</strong>
-                <span>Workflow, Uebersicht und operative Zusammenarbeit in einem Tool.</span>
-              </div>
-              <div class="media-chip">Web App</div>
+          </div>
+          <div class="showcase-caption">
+            <div class="caption-copy">
+              <strong>Web-App fuer Marketing-Prozesse</strong>
+              <span>Workflow, Uebersicht und operative Zusammenarbeit in einem Tool.</span>
             </div>
+            <div class="caption-chip">Web App</div>
           </div>
           <ul class="showcase-list">
             <li>Produktlogik fuer wiederkehrende Marketing-Workflows</li>
