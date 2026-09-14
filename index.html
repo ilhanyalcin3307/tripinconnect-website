@@ -260,7 +260,7 @@
   .showcase-grid {
     margin-top: 64px;
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 20px;
     animation: fadeUp 0.8s 0.4s ease both;
     align-items: stretch;
@@ -320,6 +320,7 @@
   .label-blue { background: rgba(101,185,255,0.14); color: #b7ddff; }
   .label-mint { background: rgba(125,247,199,0.14); color: var(--mint); }
   .label-amber { background: rgba(255,191,105,0.14); color: var(--amber); }
+  .label-rose { background: rgba(255,143,143,0.14); color: var(--rose); }
 
   .showcase-name {
     font-family: 'Manrope', sans-serif;
@@ -361,6 +362,14 @@
     display: block;
   }
 
+  .showcase-media-contain {
+    aspect-ratio: 16 / 9;
+  }
+
+  .showcase-media-contain img {
+    object-fit: contain;
+  }
+
   .showcase-caption {
     display: flex;
     justify-content: space-between;
@@ -385,6 +394,8 @@
   }
 
   .caption-chip {
+    display: inline-flex;
+    align-items: center;
     padding: 8px 12px;
     border-radius: 999px;
     background: rgba(255,255,255,0.07);
@@ -393,6 +404,14 @@
     font-size: 11px;
     font-weight: 700;
     white-space: nowrap;
+    text-decoration: none;
+    transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+  }
+
+  a.caption-chip:hover {
+    background: var(--mint-dim);
+    border-color: rgba(125,247,199,0.35);
+    color: var(--mint);
   }
 
   .screen-portal {
@@ -1280,7 +1299,7 @@
               <strong>Reiseportal mit klarer Angebotsfuehrung</strong>
               <span>Starker Einstieg fuer Suche, Inspiration und Anfrage.</span>
             </div>
-            <div class="caption-chip">Live Portal</div>
+            <a class="caption-chip" href="https://www.jetztbuchbar.de" target="_blank" rel="noopener noreferrer">Website besuchen</a>
           </div>
           <ul class="showcase-list">
             <li>Positionierung als moderner Reise-Einstiegspunkt mit visueller Tiefe</li>
@@ -1311,7 +1330,7 @@
               <strong>Markenauftritt fuer ein Reisebuero in Wien</strong>
               <span>Beratung, Vertrauen und lokaler Charakter sichtbar gemacht.</span>
             </div>
-            <div class="caption-chip">Brand Site</div>
+            <a class="caption-chip" href="https://www.reisexpert.at" target="_blank" rel="noopener noreferrer">Website besuchen</a>
           </div>
           <ul class="showcase-list">
             <li>Praesentationsseite fuer lokales Vertrauen und klare Kontaktwege</li>
@@ -1342,7 +1361,7 @@
               <strong>Web-App fuer Marketing-Prozesse</strong>
               <span>Workflow, Uebersicht und operative Zusammenarbeit in einem Tool.</span>
             </div>
-            <div class="caption-chip">Web App</div>
+            <a class="caption-chip" href="https://www.marketing-desk.net" target="_blank" rel="noopener noreferrer">Website besuchen</a>
           </div>
           <ul class="showcase-list">
             <li>Produktlogik fuer wiederkehrende Marketing-Workflows</li>
@@ -1364,6 +1383,9 @@
             <span class="showcase-label label-rose">Service-Portal</span>
             <h2 class="showcase-name">terminboerse.at</h2>
             <p class="showcase-desc">Ein lokales Service-Portal fuer kurzfristige Arzttermine in Wien, das freie Zeitfenster, Arztprofile und direkte Anfragen in einen klaren digitalen Ablauf bringt.</p>
+          </div>
+          <div class="showcase-media showcase-media-contain">
+            <img src="terminboerse pic.png" alt="Startseitenansicht von terminboerse.at" />
           </div>
           <div class="showcase-caption">
             <div class="caption-copy">
