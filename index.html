@@ -114,6 +114,12 @@
 
   .nav-links a:hover { color: var(--text); }
 
+  .nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
   .nav-cta,
   .btn-primary {
     background: linear-gradient(135deg, var(--mint), #d6ff90);
@@ -1216,6 +1222,15 @@
       display: none;
     }
 
+    .nav-actions {
+      gap: 8px;
+    }
+
+    .nav-cta {
+      padding: 10px 14px;
+      font-size: 12px;
+    }
+
     .hero {
       padding-top: 120px;
       padding-bottom: 48px;
@@ -1243,6 +1258,18 @@
       text-align: center;
     }
   }
+
+  @media (max-width: 480px) {
+    .nav-inner {
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .nav-actions {
+      width: 100%;
+      justify-content: flex-end;
+    }
+  }
 </style>
 </head>
 <body>
@@ -1255,7 +1282,9 @@
       <a href="#services">Leistungen</a>
       <a href="#contact">Kontakt</a>
     </div>
-    <a href="#contact" class="nav-cta">Projekt anfragen</a>
+    <div class="nav-actions">
+      <a href="#contact" class="nav-cta">Projekt anfragen</a>
+    </div>
   </div>
 </nav>
 
